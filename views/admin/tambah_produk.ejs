@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <title>KasirKu - Tambah Produk</title>
+  <link rel="stylesheet" href="/css/produk.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h1 class="logo">KasirKu</h1>
+    <ul>
+      <li><a href="/produk" class="active">Produk</a></li>
+      <li><a href="/penjualan">Penjualan</a></li>
+      <li><a href="/stok">Stok</a></li>
+      <li><a href="/laporan">Laporan</a></li>
+    </ul>
+    <button class="logout-btn">Logout</button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h2>Tambah Produk</h2>
+
+    <form action="/produk" method="POST" class="product-form">
+      <div class="form-group">
+        <label for="nama">Nama Produk:</label>
+        <input type="text" name="nama" id="nama" required>
+      </div>
+
+      <div class="form-group">
+        <label for="harga">Harga:</label>
+        <input type="number" name="harga" id="harga" required>
+      </div>
+
+      <div class="form-group">
+        <label for="stok">Stok:</label>
+        <input type="number" name="stok" id="stok" required>
+      </div>
+
+      <button type="submit" class="submit-btn">Simpan Produk</button>
+    </form>
+  </div>
+</body>
+</html>

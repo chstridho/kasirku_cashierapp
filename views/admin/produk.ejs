@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <title>KasirKu - Produk</title>
+  <link rel="stylesheet" href="/css/produk.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h1 class="logo">KasirKu</h1>
+    <ul>
+      <li><a href="/produk" class="active">Produk</a></li>
+      <li><a href="/penjualan">Penjualan</a></li>
+      <li><a href="/stok">Stok</a></li>
+      <li><a href="/laporan">Laporan</a></li>
+    </ul>
+    <button class="logout-btn">Logout</button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="header">
+      <h1>Produk</h1>
+      <button class="add-product-btn"><a href="/produk/tambah">+ Tambah Produk</a></button>
+    </div>
+
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Harga</th>
+          <th>Stok</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% produkList.forEach(product => { %>
+          <tr>
+            <td><%= product.nama %></td>
+            <td>Rp. <%= product.harga.toLocaleString('id-ID') %></td>
+            <td><%= product.stok %></td>
+            <td>
+              <button class="delete-btn"><a href="/produk/hapus/<%= product._id %>">Hapus</a></button>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
