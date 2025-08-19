@@ -1,6 +1,5 @@
 # 💼 KasirKu - Modern Cashier System
 
-![KasirKu App](https://via.placeholder.com/800x400/2c3e50/ffffff?text=KasirKu+Cashier+System)
 
 ## 📖 Overview
 
