@@ -33,10 +33,9 @@
 - **MongoDB/Mongoose** or **SQL-based ORM** (based on repository analysis)
 - **Data validation** and sanitization
 
-### Frontend (if included)
+### Frontend 
 - **EJS/Pug** or **React** (template engine)
 - **CSS Framework** (Bootstrap/Bulma/Tailwind)
-- **Client-side JavaScript** for interactive features
 
 ### Development Tools
 - **Nodemon** - Development server
