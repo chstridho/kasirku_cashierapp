@@ -104,11 +104,9 @@ kasirku_cashierapp/
 ├── models/                 # Database models
 ├── routes/                 # API routes
 ├── middleware/             # Custom middleware
-├── utils/                  # Helper functions
 ├── views/                  # Frontend templates (if applicable)
 ├── public/                 # Static assets
 ├── uploads/                # File upload directory
-├── tests/                  # Application tests
 ├── package.json
 └── README.md
 ```
