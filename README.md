@@ -14,7 +14,6 @@
 - **🛒 Point of Sale System** - Streamlined checkout process with cart management
 - **📦 Inventory Management** - Track products, stock levels, and categories
 - **🧾 Receipt Generation** - Automatic receipt printing capabilities
-- **📊 Sales Analytics** - Daily, weekly, and monthly sales reports
 - **👥 Multi-user Support** - Role-based access control
 - **💾 Data Export** - Export sales data to CSV format
 - **📱 Responsive Interface** - Works on desktop, tablet, and mobile devices
@@ -106,7 +105,6 @@ kasirku_cashierapp/
 ├── middleware/             # Custom middleware
 ├── views/                  # Frontend templates (if applicable)
 ├── public/                 # Static assets
-├── uploads/                # File upload directory
 ├── package.json
 └── README.md
 ```
@@ -117,8 +115,7 @@ kasirku_cashierapp/
 
 ### Sales Management
 - Create and process transactions
-- Calculate totals, taxes, and discounts
-- Handle multiple payment methods
+- Calculate totals
 - Print or email receipts
 
 ### Inventory Control
@@ -165,37 +162,6 @@ kasirku_cashierapp/
 - `POST /api/categories` - Create category
 - `PUT /api/categories/:id` - Update category
 - `DELETE /api/categories/:id` - Delete category
-
----
-
-## 🗃️ Database Schema
-
-### Users Collection/Table
-- username (String, unique)
-- email (String, unique)
-- password (String, hashed)
-- role (String: 'admin', 'cashier')
-- createdAt (Date)
-
-### Products Collection/Table
-- name (String)
-- price (Number)
-- stock (Number)
-- category (String/ObjectId)
-- barcode (String, optional)
-- description (String, optional)
-
-### Transactions Collection/Table
-- transactionId (String, unique)
-- items (Array of objects)
-- total (Number)
-- paymentMethod (String)
-- cashier (ObjectId)
-- createdAt (Date)
-
-### Categories Collection/Table
-- name (String)
-- description (String, optional)
 
 ---
 
